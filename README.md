@@ -1,14 +1,18 @@
-f2k
-===
+f2kodepack
+==========
 
-[![Build Status](https://travis-ci.org/mraveri/f2k.svg?branch=master)](https://travis-ci.org/mraveri/f2k)
+[![Build Status](https://travis-ci.org/mraveri/f2kodepack.svg?branch=f2kodepack)](https://travis-ci.org/mraveri/f2kodepack)
 
-This folder contains the build system to develop modern fortran versions of old libraries.
+This folder contains the rewriting of the odepack code in modern fortran.
 
-The idea is to compile the old code and its new version as libraries. 
-Then compile a set of tests against the two libraries and run them to make sure that the
-code is doing things right and efficiently.
+Now the code has to be developed. The idea is to translate netlib odepack in modern fortran
+using all the f2xxx features that we need to make it a modern code.
 
-The automatic documentation of the code is available at https://mraveri.github.io/f2k/
+Main points:
 
-Now the code is in the first stages of development.
+* make sure it is thread safe;
+* make sure that the high quality comments present in the original version are mantained intact;
+* make sure that the code is doing things right. Write unit testing to ensure that, comparing the output with netlib odepack;
+* testing portability might be a problem however full portability is not an immediate issue for me...
+
+The automatic documentation of the code is available at https://mraveri.github.io/f2kodepack/
