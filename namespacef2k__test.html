@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>f2kodepack: f2k_error_handler Module Reference</title>
+<title>f2kodepack: f2k_test Module Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,54 +84,99 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Types</a> &#124;
-<a href="#func-members">Functions/Subroutines</a>  </div>
+<a href="#func-members">Functions/Subroutines</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">f2k_error_handler Module Reference</div>  </div>
+<div class="title">f2k_test Module Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This module contains a error handler.  
+<p>This module contains a couple of utilities that are used to run the f2k tests.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions/Subroutines</h2></td></tr>
-<tr class="memitem:a7ccbcabb74853436329b05653a27f2ae"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacef2k__error__handler.html#a7ccbcabb74853436329b05653a27f2ae">raise_error</a> (error_message)</td></tr>
-<tr class="memdesc:a7ccbcabb74853436329b05653a27f2ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subroutine that raises errors.  <a href="#a7ccbcabb74853436329b05653a27f2ae">More...</a><br /></td></tr>
-<tr class="separator:a7ccbcabb74853436329b05653a27f2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5521518a0731a2e94186a0a65a40cdd"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacef2k__test.html#ac5521518a0731a2e94186a0a65a40cdd">start_test</a> (outroot)</td></tr>
+<tr class="memdesc:ac5521518a0731a2e94186a0a65a40cdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subroutine that starts the test environment.  <a href="#ac5521518a0731a2e94186a0a65a40cdd">More...</a><br /></td></tr>
+<tr class="separator:ac5521518a0731a2e94186a0a65a40cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa70db53dd7050270d9188da00d938694"><td class="memItemLeft" align="right" valign="top">subroutine, public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacef2k__test.html#aa70db53dd7050270d9188da00d938694">end_test</a> ()</td></tr>
+<tr class="memdesc:aa70db53dd7050270d9188da00d938694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subroutine that ends the test environment.  <a href="#aa70db53dd7050270d9188da00d938694">More...</a><br /></td></tr>
+<tr class="separator:aa70db53dd7050270d9188da00d938694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a5c6fb65e33dab3cd759a60cb198cc6b7"><td class="memItemLeft" align="right" valign="top">integer(kind=4), public&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacef2k__test.html#a5c6fb65e33dab3cd759a60cb198cc6b7">test_unit</a> = 666</td></tr>
+<tr class="separator:a5c6fb65e33dab3cd759a60cb198cc6b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This module contains a error handler. </p>
+<div class="textblock"><p>This module contains a couple of utilities that are used to run the f2k tests. </p>
 <dl class="section author"><dt>Author</dt><dd>Marco Raveri </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Can we get some inspiration from <a href="https://github.com/koenpoppe/ErrorHandlingInFortran2003">https://github.com/koenpoppe/ErrorHandlingInFortran2003</a> ? </dd></dl>
 </div><h2 class="groupheader">Function/Subroutine Documentation</h2>
-<a class="anchor" id="a7ccbcabb74853436329b05653a27f2ae"></a>
+<a class="anchor" id="aa70db53dd7050270d9188da00d938694"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">subroutine, public f2k_error_handler::raise_error </td>
+          <td class="memname">subroutine, public f2k_test::end_test </td>
           <td>(</td>
-          <td class="paramtype">character ( len = * ), intent(in), optional&#160;</td>
-          <td class="paramname"><em>error_message</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Subroutine that raises errors. </p>
+<p>Subroutine that ends the test environment. </p>
 <dl class="section author"><dt>Author</dt><dd>Marco Raveri </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>02 January 2017 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>03 January 2017 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>GNU Public License v3 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Implement optional error unit to be passed by the user </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd></dd></dl>
+
+<p>Definition at line <a class="el" href="f2k__tester_8f90_source.html#l00078">78</a> of file <a class="el" href="f2k__tester_8f90_source.html">f2k_tester.f90</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac5521518a0731a2e94186a0a65a40cdd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">subroutine, public f2k_test::start_test </td>
+          <td>(</td>
+          <td class="paramtype">character ( len = * ), intent(in), optional&#160;</td>
+          <td class="paramname"><em>outroot</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Subroutine that starts the test environment. </p>
+<dl class="section author"><dt>Author</dt><dd>Marco Raveri </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>03 January 2017 </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>GNU Public License v3 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">error_message</td><td>input error message </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">outroot</td><td>output root for the test file. If not passed the running directory is assumed and the name is assumed to be "output". </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="error__handler_8f90_source.html#l00056">56</a> of file <a class="el" href="error__handler_8f90_source.html">error_handler.f90</a>.</p>
+<p>Definition at line <a class="el" href="f2k__tester_8f90_source.html#l00051">51</a> of file <a class="el" href="f2k__tester_8f90_source.html">f2k_tester.f90</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a5c6fb65e33dab3cd759a60cb198cc6b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">integer ( kind = 4 ), public f2k_test::test_unit = 666</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="f2k__tester_8f90_source.html#l00035">35</a> of file <a class="el" href="f2k__tester_8f90_source.html">f2k_tester.f90</a>.</p>
 
 </div>
 </div>
